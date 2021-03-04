@@ -1,0 +1,50 @@
+.hondabtn-red {
+    @include styleButton($color-red, $color-white, $border-radius, $pd-1, $pd-2);
+    @include styleText($color-white, $fs-text-0, $fw-2);
+    line-height: normal;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    font-weight: 600;
+    &:hover {
+        @include styleHoverButton($color-white, $color-red, $color-red);
+    }
+}
+.hondabtn-white {
+    @include styleButton($color-white, $color-red, $border-radius, $pd-1, $pd-2);
+    @include styleText($color-red, $fs-text-0, $fw-2);
+    line-height: normal;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    width: 10rem;
+    font-weight: 600;
+    &:hover {
+        @include styleHoverButton($color-red, $color-red, $color-white);
+    }
+}
+.hondabtn-trans {
+    @include styleButton($color-trans, $color-white, $border-radius, $pd-1, $pd-2);
+    @include styleText($color-white, $fs-text-0, $fw-2);
+    &:hover {
+        @include styleHoverButton($color-white, $color-blue-nav, $color-blue-nav);
+    }
+}
+.hondabtn-blue-white {
+    @include styleButton($color-blue-nav, $color-blue-nav, $border-radius, $pd-1, $pd-2);
+    @include styleText($color-white, $fs-text-0, $fw-2);
+    display: block;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    width: 10rem;
+    font-weight: 600;
+    &:hover {
+        @include styleHoverButton($color-white, $color-blue-nav, $color-blue-nav);
+    }
+}
+.hondabtn-blue-trans {
+    @include styleButton($color-blue-text-hover, $color-blue-text-hover, $border-radius, $pd-1, $pd-2);
+    @include styleText($color-white, $fs-text-0, $fw-2);
+    &:hover {
+        @include styleHoverButton($color-trans, $color-blue-nav, $color-blue-nav);
+    }
+}
